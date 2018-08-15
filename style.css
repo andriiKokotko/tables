@@ -1,0 +1,65 @@
+html, body {
+  margin: 0 auto;
+  padding: 0;
+  width: 1000px
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse
+}
+
+td, th {
+  border: 1px solid #000;
+  width: 150px
+}
+  
+th {
+  height: 50px;
+  background: #ebebeb
+}
+
+table tr:nth-child(2n+4) {
+  height: 100px
+}
+
+td {
+  background: #ffe8ec;
+  transition: .3s
+}
+
+tr:nth-child(2n+3) td {
+  text-align: right;
+  padding-right: .5rem
+}
+
+tr:nth-child(2n+2) td:last-child {
+  background: palevioletred
+}
+
+tr:nth-child(2n+2) td:nth-last-child(2) {
+  background: pink
+}
+
+tr:nth-child(2n+3) td:last-child,
+tr:nth-last-child(2) td:nth-last-child(2) {
+  background: grey;
+  color: pink
+}
+
+tr:nth-child(3) td:nth-child(1),
+tr:nth-child(3) td:nth-child(2),
+tr:nth-child(4) td:nth-child(1),
+tr:nth-child(4) td:nth-child(2) {
+  background: gray;
+  color: #fff
+}
+
+
+table tr:nth-child(2n+3) td:hover {
+  background: #78f7c2
+}
+
+table tr:nth-child(2n+4) td:hover {
+  background: #78f7f7
+}
