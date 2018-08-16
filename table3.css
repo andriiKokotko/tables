@@ -1,0 +1,31 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    width: 1000px
+}
+
+.main td {
+    border: 2px solid #333
+}
+
+.main tr:first-child td {
+    height: 100px
+}
+
+img {
+    height: 100px;
+    width: 100%;
+}
+
+.aside {
+    width: 30%
+}
+
+.content {
+    width: 70%
+}
+
+.fl-l {
+    float: left
+}
+
