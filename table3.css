@@ -1,31 +1,83 @@
 html, body {
     margin: 0 auto;
     padding: 0;
-    width: 1000px
+    width: 1000px;
+    background: #fff4a8
+}
+
+.main {
+    margin: 10px 0;
+}
+
+.main, .aside, .content {
+    border-collapse: collapse
 }
 
 .main td {
-    border: 2px solid #333
+    border: 1px solid #333;
+    padding: 0
 }
 
-.main tr:first-child td {
-    height: 100px
+.main .header td {
+    height: 150px;
+    background: #000
 }
 
-img {
-    height: 100px;
-    width: 100%;
+.main .menu td {
+    height: 50px;
+    text-align: center
+}
+
+.main .menu td a {
+    display: block;
+    padding-top: 15px;
+    text-decoration: none;
+    color: #000;
+    height: 100%;
+    transition: .3s;
+    font-weight: bold
+}
+
+.main .menu td a:hover {
+    color: #fff;
+    background: #78f7f7
+}
+
+img[src*="header"] {
+    height: 150px;
+    width: 100%
+}
+
+.main tr:nth-child(3) img {
+    display: block;
+    width: 80%;
+    border: 1px solid #333;
+    margin: 3% auto
 }
 
 .aside {
-    width: 30%
+    width: 300px
+}
+
+.aside td {
+    border: none;
+    padding: 0 5%
 }
 
 .content {
-    width: 70%
+    width: 698px
+}
+
+.content tr:first-child td {
+    text-align: center
+}
+
+.content td {
+    padding: 0 20px;
+    border: 2px solid #333;
+    width: 33%
 }
 
 .fl-l {
     float: left
 }
-
